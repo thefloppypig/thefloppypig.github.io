@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="#" />
+        <meta charset="utf-8">
+        <title>Comp6234 Coursework</title>
+        <script src="https://d3js.org/d3.v6.min.js"></script>            <!-- This is a link to the D3 library -->
+    </head>
+    <body>
+        <h1>Could humans live on an exoplanet?</h1>
+        <p class="pb"/>
+        <h2>Could you live on an exoplanet?</h2>
+        <p class="p">
+            Exoplanets have been exhaustingly analysed for the purpose of finding extra-terrestial life, however in the far future, human life may have a reason to look to migrate
+            or expand to another planet. Which planet would you choose? Whether humans can survive on another different planet is still, for the most part, unknown. This is mostly due to lack of data to produce
+            an answer and the fact that humans do not currently hold technology powerful enough to even colonise Mars.
+            <br><br>How would you survive on an exoplanet? There are many factors which affect how survivable a planet may be, unfortunately, much of the data needed has not been discovered yet eg. atmospheres.
+            This analysis will focus on whether the planets are in the Habitable Zone (the ability to host liquid water on its surface), the temperature of the planet,
+            the surface gravity of the planet, the planet type and any similarities between the exoplanet and Earth. These variables can all be calculated since there is lots of data.
+            <br><br>This data story will show you what exoplanet discoveries humanity has made so far, how they were made,
+            and whether it will be possible for humans to live on an exoplanet. 
+        </p>
+        <p class="pb"/>
+        <h2>Our progess so far</h2>
+        <p class="p">
+            Our search for exoplanets has already shown success with thousands of planets already documented. One problem which impends our ability to travel to planets 
+            is the distance between us and the exoplanet. If you are interested in exploring a 3D Map of exoplanets <a href="https://exoplanets.nasa.gov/eyes-on-exoplanets/#/">Click this link!</a>
+            <br><br>The graph below shows the logarithmic distribution
+            of distances of exoplanets from the earth, and shows how new exoplanet discoveries expanded our horizons each year. 
+        </p>
+        <p id="p1">
+            <svg id="v1" preserveAspectRatio="xMidYMid meet" viewBox='0 0 1100 500'></svg>
+        </p>
+        <p class="p">
+            Between 1989 and 2000, there are not many discoveries and most of them are in closer range. As the years increase, you can see how new techniques and 
+            technologies developed increase our ability to find further exoplanets and exoplanets in larger quantities. 
+            <br><br>
+            There is one exoplanet which is far closer than all the other planets. This exoplanet is in the Proxima Centauri system, which is the 
+            closest known star system to earth. This system is 1.30 parsecs away (about 4.24 lightyears). As the human race is still currently limited in their space travel capabilities,
+            in the future, this exoplanet might be the first planet visited outside the solar system. So far, astronomers have not concluded whether it is habitable or not
+            , it's orbit is in the Habitable Zone, however it has been noted by NASA that the planet is bombarded with 30 times more UV Rays than earth.
+            <div class="container1">
+                <div class="infocard">
+                    <h4>Proxima Centauri b<h4>
+                    <img src="img/p1.png">
+                    <table>
+                        <tr>
+                            <td>Discovery Date</td>
+                            <td>2016</td>
+                        </tr>
+                        <tr>
+                            <td>Star System</td>
+                            <td>Proxima Centauri</td>
+                        </tr>
+                        <tr>
+                            <td>Host Star type</td>
+                            <td>M5.5 V</td>
+                        </tr>
+                        <tr>
+                            <td>Planet Type</td>
+                            <td>Super-Earth</td>
+                        </tr>
+                        <tr>
+                        <td>Distance</td>
+                        <td> 1.30 pc (4.24 ly)</td>
+                        </tr>
+                        <tr>
+                        <td>Radius</td>
+                        <td>1.08 Earth Radius</td>
+                        </tr>
+                        <tr>
+                        <td>Mass</td>
+                        <td>1.27 Earth Mass</td>
+                        </tr>
+                        <tr>
+                        <td>Gravity</td>
+                        <td>1.15 g</td>
+                        </tr>
+                        <tr>
+                        <td>Temperature</td>
+                        <td>234 K (-39°C)</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+        </p>
+        <p class="p">
+            The graph below shows how we have been finding exoplanets. The most successful technique by far is the "Transit" technique, which involves using a telescope to
+            measure electromagnetic waves originating from a star, and measuring the change as the planet passes in front of the star. To learn more about techniques to find exoplanets
+            <a href="https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/">Click this link!</a>
+            <br><br>
+            Different techniques tend to discover most a specific type of planet. For example, transit tends to discover larger planets or planet which have a low
+            orbit period. Microlensing has been used increasingly
+            over the years, and this technique is known to capture exoplanets further away than other techniques. As new techniques develop in the future, more of our galaxy will be revealed, meaning more potentially habitable planets!
+        </p>
+        <p id="p2">
+            <svg id="v2" preserveAspectRatio="xMidYMid meet" viewBox='0 0 1100 500'></svg>
+        </p>
+        <p class="pb"/>
+        <h2>Could Humans live on an exoplanet?</h2>
+        <p class="p">
+            Would any of the discovered planets be suitable to host human life? This section will dive deep into the exoplanet data to find which planets would be
+            most suitable. The temperature, gravity, planet type and orbit eccentricity of each planet will be taken into account.
+            <br><br>
+            The graph below shows the distribution of temperatures and gravities of disocvered planets. The solar system planets are also included for perspective. 
+            There are 3 zones shown. The green "Survivable Zone" at these temperatures and gravity, humans can survive just like they can on earth using clothing and shelter.
+            The values are taken from the hottest and coldest locations on earth. Scientist have also approximated humans can survive up to 2 times of earth's gravity.
+            The yellow "Survivable with aid" zone is an approximation of human survivablility if they are aided with high tech equipement that is currently inaccessible to us,
+            such as high-tech shelters, space suits or other equipement. The red zone means it is very unlikely to be a candidate for human survival. 
+        </p>
+        <p id="p3">
+            <svg id="v3" preserveAspectRatio="xMidYMid meet" viewBox='0 0 1100 500'></svg>
+        </p>
+    </p>
+    <p class="p">
+        From looking at the graph there are a few planets of interest which are similar to earth and fulfill the criteria for being survivable. Planets should be rocky and 
+        be within the survivable area to qualify.
+        Many planets in the TRAPPIST-1 system qualify for this, but also many others in the survivable area. The two planets in the Kepler-1649 system
+        are also solid candidates as they are Super-Earth planets with high similarity to earth. Details of each some of the planets are shown below. Note that all images
+        are hypothetical pictures from NASA's exoplanet map.
+    </p>
+    <div class="container4">
+        <div class="infocard">
+            <h4>TRAPPIST-1 e<h4>
+            <img src="img/t1e.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>TRAPPIST-1</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>M8 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Terrestial</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>12.4 pc (40.4 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>0.92 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>0.69 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>0.81 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>-22°C</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="infocard">
+            <h4>TRAPPIST-1 d<h4>
+            <img src="img/t1d.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>TRAPPIST-1</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>M8 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Terrestial</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>12.4 pc (40.4 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>0.78 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>0.38 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>0.62 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>15°C</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="infocard">
+            <h4>Kepler-1649 b<h4>
+            <img src="img/k1649b.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>Kepler-1649</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>M5 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Super-Earth</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>92.19 pc (300.7 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>1.02 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>1.03 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>0.997 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>34°C</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="infocard">
+            <h4>Ross 128 b<h4>
+            <img src="img/r128b.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>Ross 128</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>M4 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Super-Earth</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>3.38 pc (11.02 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>1.10 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>1.40 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>1.14 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>28°C</td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+    
+    <p class="pb"/>
+    <p class="p">
+        The previous graph only took into account the average temperature. Some planets have extremely eccentric orbits where the apastron (furthest point from the star) is a lot
+        higher than the periastron (closest point to the star). This means the temperature can vary greatly at both these points. 
+        
+        The great below plots the points of each of the planets. The planets shown outlined in red are the solar system planets. The ones outlined in yellow are planets of interest
+        which were terrestrial/super-earth planets in the survivable zone in the previous graph. Note that the temperature values in this graph are calculated with the assumption that
+        the atmosphere is 100% efficient in distributing the heat accross the surface.  
+    </p>
+    <p id="p4">
+        <svg id="v4" preserveAspectRatio="xMidYMid meet" viewBox='0 0 1100 500'></svg>
+    </p>
+    <p class="p">
+        From this graph we can pick out additional planets which could qualify as a survivable planet. Planets such as TRAPPIST-1 e are emphasised further since the orbits are not too
+        eccentric. Shown below are some more candidates which could be considered. 
+    </p>
+    <div class="container3">
+        <div class="infocard">
+            <h4>Kepler-442 b<h4>
+            <img src="img/k442b.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>Kepler-442</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>K5 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Super-Earth</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>366 pc (1194 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>1.34 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>2.36 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>1.31 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>-32.2°C</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="infocard">
+            <h4>Kepler-1652 b<h4>
+            <img src="img/k1652b.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>Kepler-1652</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>M5 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Super-Earth</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>252 pc (822 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>1.63 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>3.19 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>1.24 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>-5.1°C</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="infocard">
+            <h4>Kepler-1649 c<h4>
+            <img src="img/k1649c.PNG">
+            <table>
+                <tr>
+                    <td>Discovery Date</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Star System</td>
+                    <td>Kepler-1649</td>
+                </tr>
+                <tr>
+                    <td>Host Star type</td>
+                    <td>M5 V</td>
+                </tr>
+                <tr>
+                    <td>Planet Type</td>
+                    <td>Super-Earth</td>
+                </tr>
+                <tr>
+                  <td>Distance</td>
+                  <td>92.19 pc (300.7 ly)</td>
+                </tr>
+                <tr>
+                  <td>Radius</td>
+                  <td>1.06 Earth Radius</td>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td>1.20 Earth Mass</td>
+                </tr>
+                <tr>
+                  <td>Gravity</td>
+                  <td>1.07 g</td>
+                </tr>
+                <tr>
+                  <td>Temperature</td>
+                  <td>-39.1°C</td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+    </body>
+    <p class="pb"/>
+    <h2>Conclusion</h2>
+    <p class="p">
+        
+        There are a few planets which are good contenders which have been picked out during the analysis. The most appealing system by far is the TRAPPIST-1 system. With 7 rocky planets,
+        4 of which are in the habitable zone, and specifically TRAPPIST-1 e, this system has the highest chance out of all discovered systems to have a planet which humans can survive on. Another strong contender
+        is the Kepler-1649 system, containing 2 planets in the habitable zone which might be survivable for humans. 
+        <br><br>
+        In conclusion, the possibilty of humans living on exoplanets will become increasingly real as technologies develop. Out of the billions of exoplanets out there in the galaxy,
+        we have so far only documented and analysed a few thousand. The more we discover, the more chances of finding a planet which is suitable for humans. 
+        <br>
+        <figure>
+            <img src='https://exoplanets.nasa.gov/internal_resources/518' alt='missing' />
+            <figcaption>TRAPPIST-1 system illustration by NASA</figcaption>
+        </figure>
+        <br><br>
+    <script src="v1.js"></script> 
+    <script src="v2.js"></script> 
+    <script src="v3.js"></script> 
+    <script src="v4.js"></script> 
+</html>

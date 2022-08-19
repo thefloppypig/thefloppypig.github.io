@@ -1,0 +1,102 @@
+
+html {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    fill:white
+}
+
+text {
+    color: white;
+    fill:white;
+}
+svg {
+    background-color: black;
+    padding-top: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    /* border-bottom: 2px solid;
+    border-color: white; */
+}
+
+h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.p {
+    padding: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.pb {
+    
+    border-top: 2px solid;
+    border-color: white;
+}
+
+.infocard {
+    display: inline-table;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+.infocard img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    margin: auto
+}
+
+td:nth-child(1)  {  
+    text-align: right !important; 
+    font-weight: bold !important;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+td:nth-child(2) {  
+    text-align: left !important;
+    font-weight: normal !important;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+figure {
+    text-align: center;
+}

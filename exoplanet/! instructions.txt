@@ -1,0 +1,2 @@
+To run the visualisations, open index.html in your browser.
+Make sure javascript is enabled as all the visualisations rely on d3.
